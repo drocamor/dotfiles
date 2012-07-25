@@ -1,0 +1,16 @@
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+[user]
+    name = David Rocamora
+    email = david.rocamora@controlgroup.com
+[alias]
+    d  = diff
+    dc = diff --cached
+    lc = log ORIG_HEAD.. --stat --no-merges
+    gl = log --oneline --decorate --stat --graph
+    st = status -sb
+    prune-all = !git remote | xargs -n 1 git remote prune
+    whatis = show -s --pretty='tformat:%h (%s, %ad)' --date=short
+    whois = "!sh -c 'git log -i -1 --pretty=\"format:%an <%ae>\n\" --author=\"$1\"' -"
